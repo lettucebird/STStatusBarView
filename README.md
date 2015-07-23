@@ -9,8 +9,8 @@ Display notices on the top of iOS device's screen in a way that is similar to th
 #Usages
 * To show message:
 
-    STStatusBarView *noticeView = [[STStatusBarView alloc] initWithText:@"This is a warning message."];
-    [noticeView show];
+    `STStatusBarView *noticeView = [[STStatusBarView alloc] initWithText:@"This is a warning message."];
+    [noticeView show];`
 
 * To change color:
     
