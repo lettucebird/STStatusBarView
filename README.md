@@ -9,8 +9,8 @@ Display notices on the top of iOS device's screen in a way that is similar to th
 #Usages
 * To show message:
 
-    `STStatusBarView *noticeView = [[STStatusBarView alloc] initWithText:@"This is a warning message."];
-    [noticeView show];`
+ ```STStatusBarView *noticeView = [[STStatusBarView alloc] initWithText:@"This is a warning message."];
+[noticeView show];```
 
 * To change color:
     
@@ -20,3 +20,6 @@ Display notices on the top of iOS device's screen in a way that is similar to th
 #Limitations
 * You need to add `View controller-based status bar appearance` key to `Info.plist` and set the value to `NO` if you want `STStatusBarView` to manage the status bar text color automatically for you.
 * You are *able* to show multiple `STStatusBarView` at the same time. One way of preventing this from happening is to maintain a `@property` and check if it points to something before showing a new one; set the `@property` to `nil` as soon as you have hidden it.
+
+#Lisense
+MIT
